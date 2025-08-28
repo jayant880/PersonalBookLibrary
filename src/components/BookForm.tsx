@@ -52,7 +52,7 @@ const BookForm: FC = () => {
     }
 
     return (
-        <div className="flex justify-center items-center h-screen">
+        <div className="h-screen shadow">
             <form className="border-2 bg-gray-100 m-2 p-3 rounded-xl border-none shadow-2xl" onSubmit={handleSubmit}>
                 <h3 className="text-2xl font-bold text-blue-500 mb-2 underline underline-offset-4">Book Details :</h3>
                 <div className="flex justify-between items-center gap-2 bg-gray-50 p-2 ">

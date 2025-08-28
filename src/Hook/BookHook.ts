@@ -18,11 +18,20 @@ const useBook = () => {
     setBooks((prevBooks) => prevBooks.filter((book) => book.id !== id));
   };
 
+  const updateBook = (updatedBook: Book) => {
+    setBooks((prevBooks) =>
+      prevBooks.map((book) => {
+        return book.id === updatedBook.id ? updatedBook : book;
+      })
+    );
+  };
+
   return {
     books,
     createBook,
     getAllBook,
     deleteBookById,
+    updateBook
   };
 };
 

@@ -5,13 +5,15 @@ import BookProvider from "./Context/BookProvider"
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-100 via-white to-indigo-200">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-100">
       <BookProvider>
         <Header />
-        <div className="flex gap-3 m-3 p-3">
-          <BookForm />
-          <BookView />
-        </div>
+        <main className="container mx-auto px-4 py-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <BookForm />
+            <BookView />
+          </div>
+        </main>
       </BookProvider>
     </div>
   )

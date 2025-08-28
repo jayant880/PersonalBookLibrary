@@ -48,6 +48,7 @@ const BookForm: FC = () => {
                 id: crypto.randomUUID()
             }
             createBook(newBook);
+            setBook(INITIAL_BOOK)
         }
     }
 
@@ -100,4 +101,4 @@ const BookForm: FC = () => {
     )
 }
 
-export default BookForm
+export default BookForm;

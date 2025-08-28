@@ -14,10 +14,15 @@ const useBook = () => {
 
   const getAllBook = () => books;
 
+  const deleteBookById = (id: string) => {
+    setBooks((prevBooks) => prevBooks.filter((book) => book.id !== id));
+  };
+
   return {
     books,
     createBook,
     getAllBook,
+    deleteBookById,
   };
 };
 
